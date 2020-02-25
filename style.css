@@ -2,7 +2,6 @@
 	background-color: rgb(236, 236, 236);
 	font-family: 'Barlow', sans-serif;
 	font-size: 100%;
-
 }
 body{
 	margin: 0;
@@ -17,12 +16,13 @@ a:active{
 img:hover{
 	cursor: pointer;
 }
+/*modal*/
 .backdrop{
 	display: none;
 	position: fixed;
 	background: rgba(0,0,0,0.5);
 	top: 0;
-	height: 100wh;
+	height: 100vh;
 	width: 100vw;
 	z-index: 1;
 }
@@ -60,6 +60,57 @@ img:hover{
 		left: calc(50%-190px);
 	}
 }
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+label {
+    align-self: flex-start;
+    margin-top: 16px;
+    margin-bottom: 5px;
+}
+
+.form-input:hover {
+    background: rgb(228, 226, 226);
+}
+
+.form-input:focus, 
+.form-button {
+    outline: none;
+    cursor: pointer;
+}
+
+.form-input {
+    background: white;
+    border: 1px solid black;  
+    width: 100%;
+    padding: 3px;
+}
+
+textarea {
+    resize: none;
+    padding: 3px;
+}
+
+.submit-button {
+    margin-top: 5px;
+    padding: 5px;
+    background: #979695;
+    color: white;
+}
+
+.submit-button:active,
+.submit-button:hover {
+    cursor: pointer;
+}
+
+.submit-button:focus {
+    outline: none;
+}
 
 /*header*/
 .fixed-bar{
@@ -88,7 +139,7 @@ img:hover{
 	display: inline-block;
 	width: 20%;
 	background-color: rgb(177, 177, 174);
-	font-size: 32px;
+	font-size: 16px;
 	font-size: 0.9rem;
 }
 
@@ -115,7 +166,7 @@ img:hover{
 	text-align: center;
 	margin: 0;
 	font-size: 1rem;
-	font-size: 32px;
+	font-size: 16px;
 }
 /*footer*/
 .review-clients{
@@ -125,8 +176,7 @@ img:hover{
 	flex-wrap: wrap;
 	border: 1px solid black;
 	background-color: white;
-	margin: 5px;
-	font-size: 1rem;
+	margin: 10px;
 }
 .review-clients img{
 	width: 120px;
@@ -135,7 +185,7 @@ img:hover{
 	width: 350px;
 	text-align: center;
 	font-size: 1rem;
-	font-size: 32px;
+	font-size: 16px;
 }
 
 @media (min-width: 400px){
@@ -158,7 +208,7 @@ img:hover{
 		text-align: center;
 		margin: 0;
 		width: 50%;
-		font-size: 32px;
+		font-size: 16px;
 		font-size: 1rem;
 	}
 }
