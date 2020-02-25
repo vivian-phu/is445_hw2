@@ -2,7 +2,7 @@
 var inputName = document.getElementById('input-name');
 var inputMail = document.getElementById('input-mail');
 var inputMessage = document.getElementById('input-message');
-var button = document.querySelector('.submit-name');
+var button = document.querySelector('.submit-button');
 var regEx = /\S+@\S+\.\S+/;
 var form = document.querySelector('.form')
 
