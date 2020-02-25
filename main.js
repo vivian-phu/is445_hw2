@@ -1,8 +1,8 @@
 // JavaScript source code
 var inputName = document.getElementById('input-name');
 var inputMail = document.getElementById('input-mail');
-var inputMessage = document.getElementById('input-Message');
-var button = document.getElementById('.submit-name');
+var inputMessage = document.getElementById('input-message');
+var button = document.querySelector('.submit-name');
 var regEx = /\S+@\S+\.\S+/;
 var form = document.querySelector('.form')
 
@@ -19,4 +19,4 @@ function checkInput(){
 form.addEventListener('submit', function(event) {
     event.preventDefault();
     
-}
+})
